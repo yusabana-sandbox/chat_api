@@ -5,7 +5,7 @@ RSpec.describe "Reactions", type: :request do
 
   describe "GET /reactions" do
     it "works! (now write some real specs)" do
-      get message_reactions_path(message)
+      get api_message_reactions_path(message)
       expect(response).to have_http_status(200)
     end
   end

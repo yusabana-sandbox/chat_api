@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :messages do
-    resources :reactions
+  namespace :api do
+    resources :messages do
+      resources :reactions
+    end
   end
 end
