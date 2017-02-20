@@ -1,24 +1,19 @@
-# README
+# What's this?
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This Chat API was created to study React-Redux.
 
-Things you may want to cover:
+# Usage
+```sh
+# install gems in vender/bundle
+$ bundle install --path vendor/bundle -j4
 
-* Ruby version
+# install packages in client/node_module
+$ yarn install
 
-* System dependencies
+# create database
+$ bin/rails db:create
+$ bin/rails db:migrate
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# start
+$ bin/foreman s
+```
