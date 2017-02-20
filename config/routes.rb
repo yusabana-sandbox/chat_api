@@ -4,4 +4,7 @@ Rails.application.routes.draw do
       resources :reactions
     end
   end
+
+  root :to => 'chat#index'
+  resources :chat, only: [:index]
 end
