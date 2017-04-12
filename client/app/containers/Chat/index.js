@@ -4,6 +4,7 @@ import { bindActionCreators } from 'redux'
 import * as Actions from '../../actions/chat'
 
 import MessageList from '../../components/MessageList'
+import MessageForm from '../../components/MessageForm'
 
 class App extends Component {
   constructor(props) {
@@ -15,6 +16,7 @@ class App extends Component {
     return (
       <div>
         <MessageList messages={chat} />
+        <MessageForm />
       </div>
     )
   }
