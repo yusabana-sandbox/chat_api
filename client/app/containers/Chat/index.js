@@ -14,7 +14,7 @@ class App extends Component {
     const { chat, actions } = this.props
     return (
       <div>
-        <MessageList messages={[]} />
+        <MessageList messages={chat} />
       </div>
     )
   }
