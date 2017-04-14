@@ -26,7 +26,7 @@ class MessageList extends Component {
     return (
       message.displayState ?
         <Message key={message.id} actions={actions} id={message.id} text={message.text} onClick={this.onToggleDisplay(message.id).bind(this)} /> :
-        <MessageForm key={message.id} actions={actions} message={message} />
+        <MessageForm key={message.id} actions={actions} message={message} onCancelClick={this.onToggleDisplay(message.id).bind(this)} />
     )
   }
 
