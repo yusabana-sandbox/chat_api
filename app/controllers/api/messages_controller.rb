@@ -4,7 +4,7 @@ module Api
 
     # GET /messages
     def index
-      @messages = Message.order(created_at: :desc).all
+      @messages = Message.order(created_at: :asc).all
 
       render json: @messages
     end
