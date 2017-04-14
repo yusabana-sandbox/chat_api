@@ -15,10 +15,17 @@ class MessageList extends Component {
     })
   }
 
+  onToggleDisplay(id) {
+    return () => {
+      const { actions } = this.props
+      actions.toggleDisplayMessage(id)
+    }
+  }
+
   renderMessage(actions, message) {
     return (
       message.displayState ?
-        <Message key={message.id} actions={actions} id={message.id} text={message.text} /> :
+        <Message key={message.id} actions={actions} id={message.id} text={message.text} onClick={this.onToggleDisplay(message.id).bind(this)} /> :
         <MessageForm key={message.id} actions={actions} message={message} />
     )
   }

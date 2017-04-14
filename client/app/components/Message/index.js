@@ -1,9 +1,9 @@
 import React, { PropTypes } from 'react'
 
-const Message = ({text}) => {
+const Message = ({actions, id, text, onClick}) => {
   return (
     <div>
-      {text}
+      <span onClick={onClick}>{text}</span>
     </div>
   )
 }
